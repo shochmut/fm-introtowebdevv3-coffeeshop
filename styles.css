@@ -1,9 +1,4 @@
 
-
-
-
-
-
 * {
   box-sizing: border-box;
 }
@@ -154,28 +149,46 @@ h2 {
 
 
 /* Totals Section */
-.totals {
+.label-subtotal {
+  grid-area: 'label-subtotal';
   display: flex;
   justify-content: center;
 }
 
-.label-subtotal {
-  grid-area: 'label-subtotal';
-}
-
 .label-tax {
   grid-area: 'label-tax';
+  display: flex;
+  justify-content: center;
 }
 
 .label-total {
   grid-area: 'label-total';
+  display: flex;
+  justify-content: center;
 }
 
-.
+.subtotal {
+  grid-area: 'subtotal';
+  display: flex;
+  justify-content: center;
+}
+
+.tax {
+  grid-area: 'tax';
+  display: flex;
+  justify-content: center;
+}
+
+.total {
+  grid-area: 'total';
+  display: flex;
+  justify-content: center;
+}
 
 .totals-layout {
   display: grid;
   row-gap: 10px;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     'label-subtotal subtotal'
