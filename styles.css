@@ -165,6 +165,7 @@ h2 {
   grid-area: 'label-total';
   display: flex;
   justify-content: center;
+  font-weight: 600;
 }
 
 .subtotal {
@@ -183,6 +184,7 @@ h2 {
   grid-area: 'total';
   display: flex;
   justify-content: center;
+  font-weight: 600;
 }
 
 .totals-layout {
@@ -194,7 +196,6 @@ h2 {
     'label-subtotal subtotal'
     'label-tax      tax'
     'label-total    total';
-  border-bottom: 3px solid #fbf2c0;
 }
 
 
