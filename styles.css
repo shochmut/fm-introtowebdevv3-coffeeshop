@@ -1,46 +1,108 @@
+
+
+
+
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-nav {
+.brand {
+  background-color: #43281c;
+  color: #fbf2c0;
+  font-size: 15px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  font-weight: normal
 }
 
-nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
-  text-align: center;
-  text-decoration: none;
-  color: #555;
+.brand-logo {
+  height: 30px;
+  position: relative;
+  right: 5px;
 }
 
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
+.page {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-areas:
+    "invoice"
+    "payment";
+  grid-template-columns: 1fr 1fr;;
 }
 
-main {
-  padding: 1rem;
+h2 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #43281c;
+  display: flex;
+  width: 100%;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
+.invoice {
+  padding: 20px;
+  background-color: burlywood;
+  margin: 20px;
+  border-radius: 10px;
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.items {
+  padding: 0;
+}
+
+.item {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 15px;
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas:
+    'quantity title price'
+    'quantity options price';
+  border-bottom: 3px solid #fbf2c0;
+}
+
+.item:last-child {
+
+
+
+
+  
+ border-bottom: 0
+}
+
+/* Font Styling */
+.name {
+  font-weight: 700;
+  color: black;
+  grid-area: title;
+}
+
+.quantity {
+  color: dimgray;
+  grid-area: quantity;
+}
+
+.extra {
+  grid-area: options;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  font-size: 12px;
+  color:#43281c
 }
