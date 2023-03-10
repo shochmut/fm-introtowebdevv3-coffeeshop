@@ -48,21 +48,36 @@
         </ul>
       </section>
       <section class='payment-info'>
-        <div class='invoice'>
+        <div class='payment'>
           <h2>Name</h2>
+          <div class='name-group'>
+            <label for='order-name' class='input-label'>Name for order</label>
+            <input id='order-name' class='name-input'/>
+          </div>
         </div>
+        <div class='payment'>
+          <h2>Payment</h2>
+          <div class='name-group'>
+            <label for='order-name' class='input-label'>Card Number</label>
+            <input id='card-number' class='name-input'/>
+          </div>
+          <div class='name-group'>
+            <label for='order-name' class='input-label'>CCV Number</label>
+            <input id='ccv-number' class='name-input'/>
+          </div>
       </section>
-
-
-      </section>
-      <section class='payment'>
-
-
-
-
-      </section>
+      
     </div>
-    
+    <section class='totals'>
+      <div class='totals-layout'>
+        <p class='label-subtotal'>Subtotal:</p>
+        <p class='label-tax'>Tax:</p>
+        <p class='label-total'>Total:</p>
+        <p class='subtotal'>$19.27</p>
+        <p class='tax'>$0.96</p>
+        <p class='total'>$20.23</p>
+      </div>
+    </section>
       
 
   </body>

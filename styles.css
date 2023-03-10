@@ -56,6 +56,7 @@ h2 {
   justify-content: left;
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .items {
@@ -76,16 +77,11 @@ h2 {
   border-bottom: 3px solid #fbf2c0;
 }
 
+/* set the last bottom border to nothing */
 .item:last-child {
-
-
-
-
-  
  border-bottom: 0
 }
 
-/* Font Styling */
 .name {
   font-weight: 700;
   color: black;
@@ -106,3 +102,86 @@ h2 {
   font-size: 12px;
   color:#43281c
 }
+
+
+/* Name and Payment Section */
+.payment-info {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment {
+  padding: 20px;
+  background-color: burlywood;
+  margin: 20px;
+  border-radius: 10px;
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-group {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+}
+
+.name-input {
+  border-color: #43281c;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: burlywood;
+  width: 100%;
+}
+
+.input-label {
+  background-color: burlywood;
+  color: #43281c;
+  font-size: 11px;
+  position: absolute;
+  left: 20px;
+  top: -5px;
+  padding: 0 3px;
+}
+
+#ccv-number {
+  width: 50%;
+}
+
+
+
+/* Totals Section */
+.totals {
+  display: flex;
+  justify-content: center;
+}
+
+.label-subtotal {
+  grid-area: 'label-subtotal';
+}
+
+.label-tax {
+  grid-area: 'label-tax';
+}
+
+.label-total {
+  grid-area: 'label-total';
+}
+
+.
+
+.totals-layout {
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'label-subtotal subtotal'
+    'label-tax      tax'
+    'label-total    total';
+  border-bottom: 3px solid #fbf2c0;
+}
+
+
